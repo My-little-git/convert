@@ -1,0 +1,73 @@
+/* Main */
+
+
+
+.nav-link{
+  display: inline !important;
+}
+
+.nav-item{
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.header__icon{
+  width: 20px;
+}
+
+.converter__arrow-right{
+  width: 40px;
+}
+
+
+/* Converter */
+.select-input-field__selected-value{
+  border-left: 1px solid #ced4da;
+  border-top-right-radius: 0.375rem;
+  border-bottom-right-radius: 0.375rem;
+  border: 1px solid #ced4da;
+}
+
+.select-input-field__arrow-down{
+  width: 22px;
+  margin-left: 0.375rem;
+}
+
+.select-input-field__selected-value:hover{
+  background-color: #eee;
+  border: 1px solid rgb(141, 141, 141);
+}
+
+.select-input-field__selector-container{
+  position: absolute;
+  width: 100%;
+  top: 130%;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ced4da;
+  border-radius: 0.3rem;
+}
+
+.select-input-field__selector-item{
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 20px;
+}
+
+.select-input-field__selector-item:hover{
+  background-color: #eee;
+}
+
+.select-input-field__selector-hr{
+  margin: 0;
+}
+
+.select-input-field__selector-input-wrapper{
+  padding: 10px 10px;
+}
+
+.select-input-field__selector-list{
+  max-height: 300px;
+  overflow-y: auto;
+}

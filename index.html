@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Convert | Валюта</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/main.js"></script>
+  <script src="js/bootstrap.js"></script>
+</head>
+<body>
+  <header class="navbar navbar-expand-lg bg-light">
+    <div class="container-xxl">
+      <a href="/" class="navbar-brand">
+        <img src="img/logo.png" alt="" style="width: 150px;">
+      </a>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <img src="img/currency.svg" class="header__icon" alt="">
+          <a href="currency" class="nav-link active">Валюта</a>
+        </li>
+        <li class="nav-item">
+          <img src="img/distance.svg" class="header__icon" alt="">
+          <a href="distance" class="nav-link">Растояние</a>
+        </li>
+        <li class="nav-item">
+          <img src="img/weight.svg" class="header__icon" alt="">
+          <a href="weight" class="nav-link">Вес</a>
+        </li>
+        <li class="nav-item">
+          <img src="img/volume.svg" class="header__icon" alt="">
+          <a href="volume" class="nav-link">Объём</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <section class="converter py-5">
+    <div class="container-xxl">
+      <div class="converter__inner">
+        <form>
+          <div class="row">
+            <div class="col">
+              <label class="form-label" for="fromInput">Российский рубль</label>
+            </div>
+            <div class="col-2">
+            </div>
+            <div class="col">
+              <label class="form-label" for="toInput">Доллар США</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="converter__input-container col">
+              <div class="select-input-field position-relative">
+                <input class="form-control" type="text" value="1" id="fromInput">
+                <div class="select-input-field__selected-value position-absolute top-0 end-0 bottom-0 d-flex align-items-center px-3">
+                  <span>RUB</span>
+                  <img src="img/arrow-down.svg" alt="" class="select-input-field__arrow-down">
+                </div>
+                <div class="select-input-field__selector-container d-none">
+                  <div class="select-input-field__selector-item">
+                    <span class="select-input-field__selector-code">RUB</span>
+                    Российский рубль
+                  </div>
+                  <div class="select-input-field__selector-input-wrapper">
+                    <input class="form-control" type="text">
+                  </div>
+                  <hr class="select-input-field__selector-hr">
+                  <div class="select-input-field__selector-list">
+                    <div class="select-input-field__selector-item">
+                      <span class="select-input-field__selector-code">BGN</span>
+                      Болгарский леван
+                    </div>
+                    <div class="select-input-field__selector-item">
+                      <span class="select-input-field__selector-code">DKK</span>
+                      Датская корона
+                    </div>
+                    <div class="select-input-field__selector-item">
+                      <span class="select-input-field__selector-code">INR</span>
+                      Индийская рупия
+                    </div>
+                    <div class="select-input-field__selector-item">
+                      <span class="select-input-field__selector-code">KZT</span>
+                      Казахстанский тенге
+                    </div>
+                    <div class="select-input-field__selector-item">
+                      <span class="select-input-field__selector-code">CAD</span>
+                      Канадский доллар
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-2 text-center">
+              <img class="converter__arrow-right" src="img/arrow-right.svg" alt="">
+            </div>
+            <div class="converter__input-container col">
+              <div class="select-input-field position-relative">
+                <input disabled class="form-control" type="text" id="toInput">
+                <div class="select-input-field__selected-value position-absolute top-0 end-0 bottom-0 d-flex align-items-center px-3">
+                  <span>USD</span>
+                  <img src="img/arrow-down.svg" alt="" class="select-input-field__arrow-down">
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <section class="currency-converte">
+    <div class="container-xxl">
+      <div class="currency__cards row row-cols-5">
+        
+      </div>
+    </div>
+  </section>
+</body>
+</html>
