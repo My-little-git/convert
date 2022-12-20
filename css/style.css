@@ -1,5 +1,33 @@
+/* Animations */
+
+
+@keyframes rotate-animation {
+  0%{
+    rotate: 0deg;
+  }
+  100%{
+    rotate: 190deg;
+  }
+}
+
+.rotate-animation{
+  animation: rotate-animation .3s ease-in-out;
+}
+
+
+
 /* Main */
 
+
+body{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.content{
+  flex-grow: 1;
+}
 
 
 .nav-link{
@@ -16,10 +44,11 @@
   width: 20px;
 }
 
-.converter__arrow-right{
+.converter__rescachual{
   width: 40px;
+  cursor: pointer;
+  transition: .3s ease-in-out;
 }
-
 
 /* Converter */
 .select-input-field__selected-value{
@@ -47,6 +76,7 @@
   background-color: #fff;
   border: 1px solid #ced4da;
   border-radius: 0.3rem;
+  z-index: 20;
 }
 
 .select-input-field__selector-item{
