@@ -1,7 +1,8 @@
 
 // Load currencies
 
-let rates = []
+let rates = [],
+    page = 1
 
 const RUB = {
   CharCode: "RUB",
@@ -9,6 +10,7 @@ const RUB = {
   Nominal: 1,
   Value: 1
 }
+
 
 fetch("https://www.cbr-xml-daily.ru/daily_json.js")
 .then((response) => response.json())
@@ -39,7 +41,7 @@ function sortCurrencies(){
 
 const cardsWrapper = document.querySelector('.currency__cards')
 
-let page = 1
+
 
 
   
